@@ -6,7 +6,10 @@ This project is almost an identical copy of the official [dropwizard-example](ht
 * Has Hibernate setting to automatically generate and update table definition in the configured database
 * Unnecessary configuration was removed
 
-The purpose of this project is to serve as a somewhat realistic sample project which can be easily dockerised and deployed in a Kubernetes cluster.
+The purpose of this project is to serve as a somewhat realistic sample project which can be easily dockerized and deployed in a Kubernetes cluster.
 
-TODO: add information about how to build, run and interact with the application
+You can follow along the videos I make on this topic on [learn.alexchiri.com](https://learn.alexchiri.com) or on [my YouTube channel](https://www.youtube.com/channel/UCLiewAUg_41ye2xIcCTUm3A).
 
+## Usage
+
+You can use the Dockerfile to build and push this image to your own registry or use the one I pushed to [hub.docker.com](https://hub.docker.com/repository/docker/alexchiri/cool-service)
