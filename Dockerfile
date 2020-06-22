@@ -11,5 +11,5 @@ RUN /opt/apache-maven-${MAVEN_VERSION}/bin/mvn clean package
 FROM adoptopenjdk/openjdk11:x86_64-debianslim-jre-11.0.7_10
 COPY --from=build /root/cool-service/target/cool-service-1.0-SNAPSHOT.jar /root/cool-service/cool-service-1.0-SNAPSHOT.jar
 ADD ./config.yml /root/cool-service/config.yaml
-CMD java -jar /root/cool-service/cool-service-1.0-SNAPSHOT.jar server /data/config.yaml
+CMD java -jar /root/cool-service/cool-service-1.0-SNAPSHOT.jar server /root/cool-service/config.yaml
 EXPOSE 8080
