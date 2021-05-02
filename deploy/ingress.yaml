@@ -10,7 +10,9 @@ spec:
   - host: cool-service.example.com
     http:
       paths:
-      - backend:
+      - pathType: Prefix
+        path: "/"
+        backend:
           service:
             name: cool-service
             port:
