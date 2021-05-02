@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: cool-service
+  namespace: default
 spec:
   selector:
     app: cool-service
