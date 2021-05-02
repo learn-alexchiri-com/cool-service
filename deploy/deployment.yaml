@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cool-service
+  labels:
+    app: cool-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cool-service
+  template:
+    metadata:
+      labels:
+        app: cool-service
+    spec:
+      containers:
+      - name: cool-service
+        image: alexchiri/cool-service:1
+        ports:
+        - containerPort: 8080
